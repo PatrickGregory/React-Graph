@@ -1,3 +1,4 @@
+import { Breadcrumb } from 'antd';
 
 export const NotificationProps = (props) => {
     return (
@@ -24,6 +25,32 @@ export const MessagesProps = (props) => {
                     {props.time}
                 </p>
             </div>
+        </div>
+    )
+}
+
+export const MainBreadcrumbProp = (props) => {
+    return (
+        <Breadcrumb
+        items={[
+          {
+            title: `${props.page}`,
+          },
+          {
+            title: <p className='text-primary-emphasis'>{props.div}</p>,
+          },
+        ]}
+      />
+    )
+}
+
+export const GridBreadcrumbs = (props) => {
+    return (
+        <div className='bread' aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item fs-5 text-primary-emphasis active fw-medium">{props.active}</li>
+                <li class="breadcrumb-item fs-6 mt-1 text-secondary" aria-current="page">{props.inactive}</li>
+            </ol>
         </div>
     )
 }

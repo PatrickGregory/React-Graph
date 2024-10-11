@@ -4,7 +4,7 @@ import './App.css';
 // import Sidebar from './components/sidebar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './home/home';
-import SiderMenu from './home/sider-menu';
+import Droptest from './home/test';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route>
           <Route index element={<Home/>}/>
-          <Route path='/test' element={<SiderMenu/>}/>
+          <Route path='/test' element={<Droptest/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

@@ -4,3 +4,36 @@
     height: 2rem;
     width: 2rem;
 }
+
+/* sider-styling */
+
+@media screen and (max-width: 820px) {
+    .sider-style{
+        position: fixed !important;
+        top: 4rem !important;
+        overflow: auto !important;
+    }
+}
+
+.bread{
+    --bs-breadcrumb-divider: '|';
+}
+
+.stat-size{
+    height: 4.5rem ;
+    width: 4.5rem;
+}
+.icon-edit{
+   margin-left: 1rem; 
+   margin-top: 0.8rem;
+}
+@media screen and (max-width: 820px){
+    /* .stat-size{  
+   margin-left: 1rem; 
+   margin-top: 0.8rem;
+    } */
+    .icon-edit{
+        margin-left: 1.2rem;
+        margin-top: 1.2rem;
+    }
+}
