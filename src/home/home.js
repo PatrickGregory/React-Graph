@@ -13,7 +13,7 @@ import OppositeContentTimeline from './timeline';
 
 const siderStyle = {
     overflow: 'auto',
-    // position: 'relative',
+    // position: 'absolute',
     insetInlineStart: 0,
     // background: 'white',
     width: 280,

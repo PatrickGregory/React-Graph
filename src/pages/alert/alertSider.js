@@ -10,7 +10,7 @@ import { Menu } from 'antd';
 
 const siderStyle = {
   overflow: 'auto',
-  position: 'fixed',
+//   position: 'fixed',
   insetInlineStart: 0,
   // background: 'white',
   width: 280,
@@ -20,10 +20,11 @@ const siderStyle = {
   scrollbarColor: 'unset',
 };
 
+
 const items = [
 
   {
-    key: '1',
+    key: '9',
     label: 
     <a className='text-decoration-none' rel="noopener noreferrer" href="/">
       Dashboard
@@ -36,7 +37,7 @@ const items = [
     icon: <RxDashboard />,
     children: [
       {
-        key: '9',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/alert">
             Alert
@@ -94,7 +95,7 @@ const items = [
       {
         key: '33',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/modal">
             Modal
           </a>,
       },
@@ -312,7 +313,7 @@ const items = [
     ],
   },
 ];
-const SiderMenu = () => {
+const AlertSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
@@ -327,4 +328,4 @@ const SiderMenu = () => {
     />
   );
 };
-export default SiderMenu;
+export default AlertSider;

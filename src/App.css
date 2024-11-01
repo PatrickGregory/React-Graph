@@ -12,8 +12,10 @@
         position: fixed !important;
         top: 4rem !important;
         overflow: auto !important;
+        z-index: 1 !important;
     }
 }
+/* main content styling */
 
 .bread{
     --bs-breadcrumb-divider: '|';
@@ -35,5 +37,41 @@
     .icon-edit{
         margin-left: 1.2rem;
         margin-top: 1.2rem;
+    }
+}
+/* alert styling */
+.alert-margin{
+    margin-top: -10rem !important;
+}
+@media screen and (max-width: 820px){
+    .alert-margin{
+        margin-top: 0rem !important;
+    }
+}
+.alert-marginone{
+    margin-top: -93rem !important;
+}
+@media screen and (max-width: 820px){
+    .alert-marginone{
+        margin-top: 0rem !important;
+    }
+}
+
+/* accordion */
+.accordion-border{
+    border: none !important;
+    border-bottom: 1px solid !important;
+}
+
+/* badge page style */
+.badge-width{
+    width: auto !important;
+}
+.icon-move{
+    margin-top: -5rem !important;
+}
+@media screen and (max-width: 820px){
+    .icon-move{
+        margin-top: 0rem !important;
     }
 }

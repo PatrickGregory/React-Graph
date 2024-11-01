@@ -23,7 +23,7 @@ const siderStyle = {
 const items = [
 
   {
-    key: '1',
+    key: '10',
     label: 
     <a className='text-decoration-none' rel="noopener noreferrer" href="/">
       Dashboard
@@ -43,14 +43,14 @@ const items = [
           </a>,
       },
       {
-        key: '10',
+        key: '11',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/accordion">
             Accordion
           </a>,
       },
       {
-        key: '11',
+        key: '31',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/badges">
             Badges
@@ -78,7 +78,7 @@ const items = [
           </a>,
       },
       {
-        key: '31',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/carousel">
             Carousel
@@ -94,7 +94,7 @@ const items = [
       {
         key: '33',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/modal">
             Modal
           </a>,
       },
@@ -312,7 +312,7 @@ const items = [
     ],
   },
 ];
-const SiderMenu = () => {
+const CarouselSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
@@ -327,4 +327,4 @@ const SiderMenu = () => {
     />
   );
 };
-export default SiderMenu;
+export default CarouselSider;

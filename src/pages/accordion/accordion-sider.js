@@ -23,7 +23,7 @@ const siderStyle = {
 const items = [
 
   {
-    key: '1',
+    key: '10',
     label: 
     <a className='text-decoration-none' rel="noopener noreferrer" href="/">
       Dashboard
@@ -43,7 +43,7 @@ const items = [
           </a>,
       },
       {
-        key: '10',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/accordion">
             Accordion
@@ -94,7 +94,7 @@ const items = [
       {
         key: '33',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/modal">
             Modal
           </a>,
       },
@@ -312,7 +312,7 @@ const items = [
     ],
   },
 ];
-const SiderMenu = () => {
+const AccordionSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
@@ -327,4 +327,4 @@ const SiderMenu = () => {
     />
   );
 };
-export default SiderMenu;
+export default AccordionSider;

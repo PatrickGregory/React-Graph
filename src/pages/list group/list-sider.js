@@ -10,10 +10,11 @@ import { Menu } from 'antd';
 
 const siderStyle = {
   overflow: 'auto',
-  position: 'fixed',
+  // position: 'fixed',
   insetInlineStart: 0,
   // background: 'white',
-  width: 280,
+  // width: 280,
+  height: 700,
   top: 0,
   bottom: 0,
   scrollbarWidth: 'thick',
@@ -23,7 +24,7 @@ const siderStyle = {
 const items = [
 
   {
-    key: '1',
+    key: '10',
     label: 
     <a className='text-decoration-none' rel="noopener noreferrer" href="/">
       Dashboard
@@ -43,14 +44,14 @@ const items = [
           </a>,
       },
       {
-        key: '10',
+        key: '11',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/accordion">
             Accordion
           </a>,
       },
       {
-        key: '11',
+        key: '31',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/badges">
             Badges
@@ -78,14 +79,14 @@ const items = [
           </a>,
       },
       {
-        key: '31',
+        key: '32',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/carousel">
             Carousel
           </a>,
       },
       {
-        key: '32',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/lists">
             List group
@@ -94,7 +95,7 @@ const items = [
       {
         key: '33',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/modal">
             Modal
           </a>,
       },
@@ -312,7 +313,7 @@ const items = [
     ],
   },
 ];
-const SiderMenu = () => {
+const ListSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
@@ -327,4 +328,4 @@ const SiderMenu = () => {
     />
   );
 };
-export default SiderMenu;
+export default ListSider;

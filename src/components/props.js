@@ -1,4 +1,5 @@
 import { Breadcrumb } from 'antd';
+import { Button} from 'react-bootstrap';
 
 export const NotificationProps = (props) => {
     return (
@@ -43,6 +44,23 @@ export const MainBreadcrumbProp = (props) => {
       />
     )
 }
+export const MainBreadcrumbPropOne = (props) => {
+    return (
+        <Breadcrumb
+        items={[
+          {
+            title: `${props.page}`,
+          },
+          {
+            title: `${props.pageone}`,
+          },
+          {
+            title: <p className='text-primary-emphasis'>{props.div}</p>,
+          },
+        ]}
+      />
+    )
+}
 
 export const GridBreadcrumbs = (props) => {
     return (
@@ -53,4 +71,20 @@ export const GridBreadcrumbs = (props) => {
             </ol>
         </div>
     )
+}
+
+// button page prop
+export const ButtonProp = (props) => {
+  return (
+      <div>
+          <Button variant={`${props.variant}`}>Primary</Button>{' '}
+          <Button variant={`${props.variantone}`}>Secondary</Button>{' '}
+          <Button variant={`${props.varianttwo}`}>Success</Button>{' '}
+          <Button variant={`${props.variantthree}`}>Danger</Button>{' '}
+          <Button variant={`${props.variantfour}`}>Warning</Button>{' '}
+          <Button variant={`${props.variantfive}`}>Info</Button>{' '}
+          <Button variant={`${props.variantsix}`}>Light</Button>{' '}
+          <Button variant={`${props.variantseven}`}>Dark</Button>{' '}
+      </div>
+  )
 }
