@@ -93,21 +93,21 @@ const items = [
           </a>,
       },
       {
-        key: '1',
+        key: '34',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/modal">
             Modal
           </a>,
       },
       {
-        key: '34',
+        key: '35',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/tabs">
             Tabs
           </a>,
       },
       {
-        key: '35',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/pagination">
             Pagination
@@ -313,7 +313,7 @@ const items = [
     ],
   },
 ];
-const ModalSider = () => {
+const PageSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
@@ -328,4 +328,4 @@ const ModalSider = () => {
     />
   );
 };
-export default ModalSider;
+export default PageSider;

@@ -7,8 +7,8 @@ import ChatBadges from '../../components/dropdowns/badged-chat'
 import Profile from '../../components/dropdowns/profile'
 import Sider from 'antd/es/layout/Sider'
 import { MainBreadcrumbPropOne } from '../../components/props'
-import CarouselSider from './carousel-sider'
-import { AutoPlay, Captions, Controlled, Fade, Indicators } from './carousel'
+import TabSider from './tabSider'
+import { Default, Justified, JustifiedUnderlined, Pill, Underline, VerticalPill } from './tabs'
 
 const siderStyle = {
     overflow: 'auto',
@@ -16,13 +16,14 @@ const siderStyle = {
     insetInlineStart: 0,
     // background: 'white',
     width: 280,
+    height: 1200,
     top: 0,
     bottom: 0,
     scrollbarWidth: 'thick',
     scrollbarColor: 'unset',
 };
 
-function CarouselPage() {
+function TabPage() {
     const [collapsed, setCollapsed] = useState(false);
     const {
         token: { colorBgContainer, borderRadiusLG },
@@ -70,7 +71,7 @@ function CarouselPage() {
                     trigger={null} collapsible collapsed={collapsed}
                     className='sider-style mt-1'
                 >
-                    <CarouselSider />
+                    <TabSider />
                 </Sider>
                 <Content
                     style={{
@@ -79,35 +80,39 @@ function CarouselPage() {
                         background: colorBgContainer,
                         borderRadius: borderRadiusLG,
                     }}>
-                    <h4 className='text-primary-emphasis'>Carousel</h4>
+                    <h4 className='text-primary-emphasis'>Tabs</h4>
                     <MainBreadcrumbPropOne
                         page='Home'
                         pageone='Component'
-                        div='Carousels'
+                        div='Tabs'
                     />
-                    <div className='row container gap-5'>
-                        <div className='col-lg-5 col-md-6 col-sm-6'>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>Slides only</h5>
-                                <AutoPlay />
+                    <div className="row gap-3">
+                        <div className='col-sm-6 col-md-6 col-lg-6'>
+                            <div className='card p-4 my-3'>
+                                <h4 className='text-primary-emphasis my-1'>Default Tabs</h4>
+                                <div><Default/></div>
                             </div>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>With Indicators</h5>
-                                <Indicators />
+                            <div className='card p-4 my-2'>
+                                <h4 className='text-primary-emphasis my-1'>Bordered Tabs</h4>
+                                <div><Underline/></div>
                             </div>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>Carousel with fade transition</h5>
-                                <Fade />
+                            <div className='card p-4 my-2'>
+                                <h4 className='text-primary-emphasis my-1'>Pill Tabs</h4>
+                                <div><Pill/></div>
                             </div>
                         </div>
-                        <div className='col-lg-5 col-md-6 col-sm-6'>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>With Controls</h5>
-                                <Controlled />
+                        <div className='col-sm-6 col-md-6 col-lg-5'>
+                            <div className='card p-2 my-3'>
+                                <h4 className='text-primary-emphasis my-3'>Default Tabs Justified</h4>
+                                <div><Justified/></div>
                             </div>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>With Captions</h5>
-                                <Captions />
+                            <div className='card p-2 my-3'>
+                                <h4 className='text-primary-emphasis my-3'>Bordered Tabs Justified</h4>
+                                <div><JustifiedUnderlined/></div>
+                            </div>
+                            <div className='card p-2 my-3'>
+                                <h4 className='text-primary-emphasis my-3'>Vertical Pill Tabs</h4>
+                                <div><VerticalPill/></div>
                             </div>
                         </div>
                     </div>
@@ -117,4 +122,4 @@ function CarouselPage() {
     )
 }
 
-export default CarouselPage
+export default TabPage

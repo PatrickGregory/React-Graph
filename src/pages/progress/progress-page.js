@@ -7,8 +7,8 @@ import ChatBadges from '../../components/dropdowns/badged-chat'
 import Profile from '../../components/dropdowns/profile'
 import Sider from 'antd/es/layout/Sider'
 import { MainBreadcrumbPropOne } from '../../components/props'
-import CarouselSider from './carousel-sider'
-import { AutoPlay, Captions, Controlled, Fade, Indicators } from './carousel'
+import ProgressSider from './progress-sider'
+import { Animated, Default, Height, Label, ProgressBg, Stripe } from './progress'
 
 const siderStyle = {
     overflow: 'auto',
@@ -16,13 +16,14 @@ const siderStyle = {
     insetInlineStart: 0,
     // background: 'white',
     width: 280,
+    height: 1200,
     top: 0,
     bottom: 0,
     scrollbarWidth: 'thick',
     scrollbarColor: 'unset',
 };
 
-function CarouselPage() {
+function ProgressPage() {
     const [collapsed, setCollapsed] = useState(false);
     const {
         token: { colorBgContainer, borderRadiusLG },
@@ -70,7 +71,7 @@ function CarouselPage() {
                     trigger={null} collapsible collapsed={collapsed}
                     className='sider-style mt-1'
                 >
-                    <CarouselSider />
+                    <ProgressSider />
                 </Sider>
                 <Content
                     style={{
@@ -79,35 +80,40 @@ function CarouselPage() {
                         background: colorBgContainer,
                         borderRadius: borderRadiusLG,
                     }}>
-                    <h4 className='text-primary-emphasis'>Carousel</h4>
+                    <h4 className='text-primary-emphasis'>Progress</h4>
                     <MainBreadcrumbPropOne
                         page='Home'
                         pageone='Component'
-                        div='Carousels'
+                        div='Progress'
                     />
-                    <div className='row container gap-5'>
-                        <div className='col-lg-5 col-md-6 col-sm-6'>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>Slides only</h5>
-                                <AutoPlay />
+                    <div className="row gap-3">
+                        <div className='col-sm-6 col-md-6 col-lg-6'>
+                            <div className='card p-4 my-3'>
+                                <h5 className='text-primary-emphasis my-1'>Default</h5>
+                                <div className='mt-4'><Default/></div>
                             </div>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>With Indicators</h5>
-                                <Indicators />
+                            <div className='card p-4 my-2'>
+                                <h5 className='text-primary-emphasis my-1'>Labels</h5>
+                                <div className='mt-4'><Label/></div>
                             </div>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>Carousel with fade transition</h5>
-                                <Fade />
+                            <div className='card p-4 my-2'>
+                                <h5 className='text-primary-emphasis my-1'>Backgrounds</h5>
+                                <div className='mt-4'><ProgressBg/></div>
                             </div>
                         </div>
-                        <div className='col-lg-5 col-md-6 col-sm-6'>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>With Controls</h5>
-                                <Controlled />
+                        <div className='col-sm-6 col-md-6 col-lg-5'>
+                            <div className='card p-2 my-3'>
+                                <h5 className='text-primary-emphasis my-1'>Height</h5>
+                                <p className='text-secondary fs-5'>We only set a height value on the .progress, so if you change that value the inner .progress-bar will automatically resize accordingly</p>
+                                <div className='mt-1'><Height/></div>
                             </div>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>With Captions</h5>
-                                <Captions />
+                            <div className='card p-2 my-3'>
+                                <h5 className='text-primary-emphasis my-1'>Striped Backgrounds</h5>
+                                <div className='mt-1'><Stripe/></div>
+                            </div>
+                            <div className='card p-2 my-3'>
+                                <h5 className='text-primary-emphasis my-1'>Striped Animated Backgrounds</h5>
+                                <div className='mt-1'><Animated/></div>
                             </div>
                         </div>
                     </div>
@@ -117,4 +123,4 @@ function CarouselPage() {
     )
 }
 
-export default CarouselPage
+export default ProgressPage

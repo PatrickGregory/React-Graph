@@ -93,14 +93,14 @@ const items = [
           </a>,
       },
       {
-        key: '1',
+        key: '34',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/modal">
             Modal
           </a>,
       },
       {
-        key: '34',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/tabs">
             Tabs
@@ -123,14 +123,14 @@ const items = [
       {
         key: '37',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="/spinners">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/tooltips">
             Spinners
           </a>,
       },
       {
         key: '38',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="/tooltips">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
             Tooltips
           </a>,
       }
@@ -313,7 +313,7 @@ const items = [
     ],
   },
 ];
-const ModalSider = () => {
+const TabSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
@@ -328,4 +328,4 @@ const ModalSider = () => {
     />
   );
 };
-export default ModalSider;
+export default TabSider;

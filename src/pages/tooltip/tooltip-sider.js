@@ -93,42 +93,42 @@ const items = [
           </a>,
       },
       {
-        key: '1',
+        key: '34',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/modal">
             Modal
           </a>,
       },
       {
-        key: '34',
+        key: '35',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/tabs">
             Tabs
           </a>,
       },
       {
-        key: '35',
+        key: '36',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/pagination">
             Pagination
           </a>,
       },
       {
-        key: '36',
+        key: '37',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/progress">
             Progress
           </a>,
       },
       {
-        key: '37',
+        key: '38',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/spinners">
             Spinners
           </a>,
       },
       {
-        key: '38',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/tooltips">
             Tooltips
@@ -313,7 +313,7 @@ const items = [
     ],
   },
 ];
-const ModalSider = () => {
+const TooltipSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
@@ -328,4 +328,4 @@ const ModalSider = () => {
     />
   );
 };
-export default ModalSider;
+export default TooltipSider;

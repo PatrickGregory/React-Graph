@@ -7,8 +7,8 @@ import ChatBadges from '../../components/dropdowns/badged-chat'
 import Profile from '../../components/dropdowns/profile'
 import Sider from 'antd/es/layout/Sider'
 import { MainBreadcrumbPropOne } from '../../components/props'
-import ModalSider from './modal-sider'
-import { BasicModal, Center, ModalSize, NoAnimation, NoBackDrop, ScrollModal} from './modal'
+import SpinnerSider from './spinner-sider'
+import { Alignment, Border, Colors, Growing, GrowingColors, LoadingButton, Sizes } from './spinners'
 
 const siderStyle = {
     overflow: 'auto',
@@ -23,7 +23,7 @@ const siderStyle = {
     scrollbarColor: 'unset',
 };
 
-function ModalPage() {
+function SpinnerPage() {
     const [collapsed, setCollapsed] = useState(false);
     const {
         token: { colorBgContainer, borderRadiusLG },
@@ -71,7 +71,7 @@ function ModalPage() {
                     trigger={null} collapsible collapsed={collapsed}
                     className='sider-style mt-1'
                 >
-                    <ModalSider />
+                    <SpinnerSider />
                 </Sider>
                 <Content
                     style={{
@@ -80,50 +80,51 @@ function ModalPage() {
                         background: colorBgContainer,
                         borderRadius: borderRadiusLG,
                     }}>
-                    <h4 className='text-primary-emphasis'>Modal</h4>
+                    <h4 className='text-primary-emphasis'>Spinners</h4>
                     <MainBreadcrumbPropOne
                         page='Home'
                         pageone='Component'
-                        div='Modal'
+                        div='Spinners'
                     />
                     <div className="row gap-3">
                         <div className='col-sm-6 col-md-6 col-lg-6'>
                             <div className='card p-4 my-3'>
-                                <h4 className='text-primary-emphasis my-1'>Basic Modal</h4>
-                                <p className='fs-6'>Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page</p>
-                                <div><BasicModal /></div>
+                                <h5 className='text-primary-emphasis my-1'>Border Spinner</h5>
+                                <p className='text-secondary fs-5'>Use the border spinners for a lightweight loading indicator.</p>
+                                <div className='mt-1'><Border/></div>
                             </div>
                             <div className='card p-4 my-2'>
-                                <h4 className='text-primary-emphasis my-1'>Disabled Backdrop</h4>
-                                <p className='fs-6'>You can disable the backdrop by adding <span className='text-danger'>data-bs-backdrop="false"</span> to <span className="text-danger">.modal-dialog</span></p>
-                                <div><NoBackDrop /></div>
+                                <h5 className='text-primary-emphasis my-1'>Colors</h5>
+                                <div className='mt-3'><Colors/></div>
                             </div>
                             <div className='card p-4 my-2'>
-                                <h4 className='text-primary-emphasis my-1'>Scrolling long content</h4>
-                                <p className='fs-6'>When modals become too long for the user’s viewport or device, they scroll independent of the page itself. You can also create a scrollable modal that allows scroll the modal body by adding <span className='text-danger'>.modal-dialog-scrollable</span> to <span className='text-danger'>.modal-dialog</span></p>
-                                <div><ScrollModal /></div>
+                                <h5 className='text-primary-emphasis my-1'>Alignment</h5>
+                                <p className='fs-6 text-secondary'>Use flexbox utilities, float utilities, or text alignment utilities to place spinners exactly where you need them in any situation.</p>
+                                <div className='mt-1'><Alignment/></div>
+                            </div>
+                            <div className='card p-4 my-2'>
+                                <h5 className='text-primary-emphasis my-1'>Buttons</h5>
+                                <p className='fs-6 text-secondary'>Use spinners within buttons to
+                                     indicate an action is currently processing or taking place.
+                                     You may also swap the text out of the spinner 
+                                    element and utilize button text as needed.</p>
+                                <div className='mt-1'><LoadingButton/></div>
                             </div>
                         </div>
                         <div className='col-sm-6 col-md-6 col-lg-5'>
                             <div className='card p-2 my-3'>
-                                <h4 className='text-primary-emphasis my-3'>Vertically Centered</h4>
-                                <p className='fs-6'>Add <span className='text-danger'>.modal-dialog-centered</span> to <span className='text-danger'>.modal-dialog</span> to vertically center the modal.</p>
-                                <div><Center /></div>
+                                <h5 className='text-primary-emphasis my-1'>Growing Spinner</h5>
+                                <p className='text-secondary fs-5'>If you don’t fancy a border spinner, switch to the grow spinner. While it doesn’t technically spin, it does repeatedly grow!</p>
+                                <div className='mt-1'><Growing/></div>
                             </div>
                             <div className='card p-2 my-3'>
-                                <h4 className='text-primary-emphasis my-3'>Modal Sizes</h4>
-                                <p className='fs-6'>Modals have three optional sizes, available via modifier
-                                    classes to be placed on a <span className='text-danger'>.modal-dialog.</span>
-                                    These sizes kick in at certain breakpoints to
-                                    avoid horizontal scrollbars on narrower viewports.</p>
-                                <div className="row gap-1">
-                                    <div><ModalSize/></div>
-                                </div>
+                                <h5 className='text-primary-emphasis my-1'>Striped Backgrounds</h5>
+                                <div className='my-3'><GrowingColors/></div>
                             </div>
                             <div className='card p-2 my-3'>
-                                <h4 className='text-primary-emphasis my-3'>Disabled Animation</h4>
-                                <p className='fs-6'>For modals that simply appear rather than fade in to view, remove the <span className='text-danger'>.fade</span> class from your <span className='text-danger'>.modal</span> element</p>
-                                <div><NoAnimation/></div>
+                                <h5 className='text-primary-emphasis my-1'>Sizes</h5>
+                                <p className='text-secondary my-2'>Add <span className='text-danger'>.spinner-border-sm</span> and <span className='text-danger'>.spinner-grow-sm</span> to make a smaller spinner that can quickly be used within other components. Or, use custom CSS or inline styles to change the dimensions as needed.</p>
+                                <div className='mt-1'><Sizes/></div>
                             </div>
                         </div>
                     </div>
@@ -133,4 +134,4 @@ function ModalPage() {
     )
 }
 
-export default ModalPage
+export default SpinnerPage

@@ -7,8 +7,8 @@ import ChatBadges from '../../components/dropdowns/badged-chat'
 import Profile from '../../components/dropdowns/profile'
 import Sider from 'antd/es/layout/Sider'
 import { MainBreadcrumbPropOne } from '../../components/props'
-import CarouselSider from './carousel-sider'
-import { AutoPlay, Captions, Controlled, Fade, Indicators } from './carousel'
+import TooltipSider from './tooltip-sider'
+import { ToolTip } from './tooltips'
 
 const siderStyle = {
     overflow: 'auto',
@@ -16,13 +16,14 @@ const siderStyle = {
     insetInlineStart: 0,
     // background: 'white',
     width: 280,
+    height: 1200,
     top: 0,
     bottom: 0,
     scrollbarWidth: 'thick',
     scrollbarColor: 'unset',
 };
 
-function CarouselPage() {
+function TooltipPage() {
     const [collapsed, setCollapsed] = useState(false);
     const {
         token: { colorBgContainer, borderRadiusLG },
@@ -70,7 +71,7 @@ function CarouselPage() {
                     trigger={null} collapsible collapsed={collapsed}
                     className='sider-style mt-1'
                 >
-                    <CarouselSider />
+                    <TooltipSider />
                 </Sider>
                 <Content
                     style={{
@@ -79,35 +80,18 @@ function CarouselPage() {
                         background: colorBgContainer,
                         borderRadius: borderRadiusLG,
                     }}>
-                    <h4 className='text-primary-emphasis'>Carousel</h4>
+                    <h4 className='text-primary-emphasis'>Tooltips</h4>
                     <MainBreadcrumbPropOne
                         page='Home'
                         pageone='Component'
-                        div='Carousels'
+                        div='Tooltips'
                     />
-                    <div className='row container gap-5'>
-                        <div className='col-lg-5 col-md-6 col-sm-6'>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>Slides only</h5>
-                                <AutoPlay />
-                            </div>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>With Indicators</h5>
-                                <Indicators />
-                            </div>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>Carousel with fade transition</h5>
-                                <Fade />
-                            </div>
-                        </div>
-                        <div className='col-lg-5 col-md-6 col-sm-6'>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>With Controls</h5>
-                                <Controlled />
-                            </div>
-                            <div className="card p-2 shadow my-4">
-                                <h5 className='text-primary-emphasis'>With Captions</h5>
-                                <Captions />
+                    <div className="row">
+                        <div className='col-sm-6 col-md-6 col-lg-11 card shadow'>
+                            <h5 className='text-primary-emphasis my-1'>Tooltips Examples</h5>
+                            <p className="text-secondary fs-5 my-2">Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left.</p>
+                            <div className='my-3'>
+                                <ToolTip/>
                             </div>
                         </div>
                     </div>
@@ -117,4 +101,4 @@ function CarouselPage() {
     )
 }
 
-export default CarouselPage
+export default TooltipPage
