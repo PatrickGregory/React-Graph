@@ -123,14 +123,14 @@ const items = [
       {
         key: '37',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="/tooltips">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/spinners">
             Spinners
           </a>,
       },
       {
         key: '38',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/tooltips">
             Tooltips
           </a>,
       }
@@ -144,14 +144,14 @@ const items = [
       {
         key: '13',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/form_elements">
             Form Elements
           </a>,
       },
       {
         key: '14',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/form_layout">
             Form Layouts
           </a>,
       },
@@ -165,7 +165,7 @@ const items = [
       {
         key: '16',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/form_validation">
             Form Validation
           </a>,
       },

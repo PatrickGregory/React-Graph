@@ -32,7 +32,7 @@ const items = [
     icon: <RxDashboard className='fs-6' />
   },
   {
-    key: 'sub1',
+    key: 'sub2',
     label: 'Components',
     icon: <RxDashboard />,
     children: [
@@ -100,14 +100,14 @@ const items = [
           </a>,
       },
       {
-        key: '35',
+        key: '14',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/tabs">
             Tabs
           </a>,
       },
       {
-        key: '1',
+        key: '35',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/pagination">
             Pagination
@@ -137,7 +137,7 @@ const items = [
     ],
   },
   {
-    key: 'sub2',
+    key: 'sub1',
     label: 'Forms',
     icon: <AppstoreOutlined />,
     children: [
@@ -149,7 +149,7 @@ const items = [
           </a>,
       },
       {
-        key: '14',
+        key: '16',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/form_layout">
             Form Layouts
@@ -163,7 +163,7 @@ const items = [
           </a>,
       },
       {
-        key: '16',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/form_validation">
             Form Validation
@@ -313,7 +313,7 @@ const items = [
     ],
   },
 ];
-const PageSider = () => {
+const ValidationSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
@@ -328,4 +328,4 @@ const PageSider = () => {
     />
   );
 };
-export default PageSider;
+export default ValidationSider;

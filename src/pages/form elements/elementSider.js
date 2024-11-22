@@ -13,7 +13,6 @@ const siderStyle = {
   // position: 'fixed',
   insetInlineStart: 0,
   // background: 'white',
-  // width: 280,
   height: 700,
   top: 0,
   bottom: 0,
@@ -32,7 +31,7 @@ const items = [
     icon: <RxDashboard className='fs-6' />
   },
   {
-    key: 'sub1',
+    key: 'sub2',
     label: 'Components',
     icon: <RxDashboard />,
     children: [
@@ -79,35 +78,35 @@ const items = [
           </a>,
       },
       {
-        key: '32',
+        key: '13',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/carousel">
             Carousel
           </a>,
       },
       {
-        key: '33',
+        key: '32',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/lists">
             List group
           </a>,
       },
       {
-        key: '34',
+        key: '33',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/modal">
             Modal
           </a>,
       },
       {
-        key: '35',
+        key: '34',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/tabs">
             Tabs
           </a>,
       },
       {
-        key: '1',
+        key: '35',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/pagination">
             Pagination
@@ -137,12 +136,12 @@ const items = [
     ],
   },
   {
-    key: 'sub2',
+    key: 'sub1',
     label: 'Forms',
     icon: <AppstoreOutlined />,
     children: [
       {
-        key: '13',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/form_elements">
             Form Elements
@@ -313,7 +312,7 @@ const items = [
     ],
   },
 ];
-const PageSider = () => {
+const ElementSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
@@ -328,4 +327,4 @@ const PageSider = () => {
     />
   );
 };
-export default PageSider;
+export default ElementSider;

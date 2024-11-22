@@ -17,6 +17,9 @@ import MainPage from './pages/pagination/main-page';
 import ProgressPage from './pages/progress/progress-page';
 import SpinnerPage from './pages/spinners/spinner-page';
 import TooltipPage from './pages/tooltip/tooltipPage';
+import FormElement from './pages/form elements/elementPage';
+import LayoutPage from './pages/form layout/layoutPage';
+import ValidationPage from './pages/form validation/validationPage';
 
 function App() {
   return (
@@ -38,6 +41,9 @@ function App() {
           <Route path='/progress' element={<ProgressPage/>}/>
           <Route path='/spinners' element={<SpinnerPage/>}/>
           <Route path='/tooltips' element={<TooltipPage/>}/>
+          <Route path='/form_elements' element={<FormElement/>}/>
+          <Route path='/form_layout' element={<LayoutPage/>}/>
+          <Route path='/form_validation' element={<ValidationPage/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
