@@ -10,10 +10,11 @@ import { Menu } from 'antd';
 
 const siderStyle = {
   overflow: 'auto',
-  position: 'fixed',
+  // position: 'fixed',
   insetInlineStart: 0,
   // background: 'white',
-  width: 280,
+  // width: 280,
+  height: '100%',
   top: 0,
   bottom: 0,
   scrollbarWidth: 'thick',
@@ -31,7 +32,7 @@ const items = [
     icon: <RxDashboard className='fs-6' />
   },
   {
-    key: 'sub1',
+    key: 'sub2',
     label: 'Components',
     icon: <RxDashboard />,
     children: [
@@ -50,14 +51,14 @@ const items = [
           </a>,
       },
       {
-        key: '12',
+        key: '31',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/badges">
             Badges
           </a>,
       },
       {
-        key: '1',
+        key: '12',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/breadcrumb">
             Breadcrumbs
@@ -78,28 +79,28 @@ const items = [
           </a>,
       },
       {
-        key: '31',
+        key: '32',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/carousel">
             Carousel
           </a>,
       },
       {
-        key: '32',
+        key: '33',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/lists">
             List group
           </a>,
       },
       {
-        key: '33',
+        key: '34',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/modal">
             Modal
           </a>,
       },
       {
-        key: '34',
+        key: '14',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/tabs">
             Tabs
@@ -136,7 +137,7 @@ const items = [
     ],
   },
   {
-    key: 'sub2',
+    key: 'sub4',
     label: 'Forms',
     icon: <AppstoreOutlined />,
     children: [
@@ -148,7 +149,7 @@ const items = [
           </a>,
       },
       {
-        key: '14',
+        key: '16',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/form_layout">
             Form Layouts
@@ -162,7 +163,7 @@ const items = [
           </a>,
       },
       {
-        key: '16',
+        key: '17',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/form_validation">
             Form Validation
@@ -171,12 +172,12 @@ const items = [
     ],
   },
   {
-    key: 'sub4',
+    key: 'sub1',
     label: 'Tables',
     icon: <SettingOutlined />,
     children: [
       {
-        key: '17',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/general_table">
             General Tables
@@ -312,14 +313,14 @@ const items = [
     ],
   },
 ];
-const BreadcrumbSider = () => {
+const TableSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
   return (
     <Menu
       onClick={onClick}
-      // style={siderStyle}
+      style={siderStyle}
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
       mode="inline"
@@ -327,4 +328,4 @@ const BreadcrumbSider = () => {
     />
   );
 };
-export default BreadcrumbSider;
+export default TableSider;

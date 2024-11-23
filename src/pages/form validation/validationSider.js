@@ -14,7 +14,7 @@ const siderStyle = {
   insetInlineStart: 0,
   // background: 'white',
   // width: 280,
-  height: 700,
+  height: '100%',
   top: 0,
   bottom: 0,
   scrollbarWidth: 'thick',
@@ -179,14 +179,14 @@ const items = [
       {
         key: '17',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/general_table">
             General Tables
           </a>,
       },
       {
         key: '18',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/data_table">
             Data Tables
           </a>,
       },
@@ -320,7 +320,7 @@ const ValidationSider = () => {
   return (
     <Menu
       onClick={onClick}
-      // style={siderStyle}
+      style={siderStyle}
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
       mode="inline"

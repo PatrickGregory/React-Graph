@@ -178,14 +178,14 @@ const items = [
       {
         key: '17',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/general_table">
             General Tables
           </a>,
       },
       {
         key: '18',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/data_table">
             Data Tables
           </a>,
       },

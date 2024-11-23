@@ -9,8 +9,6 @@ import { GridBreadcrumbs, MainBreadcrumbProp } from '../components/props';
 import { BsCart, BsCurrencyDollar, BsPeople } from 'react-icons/bs';
 import { FaDollarSign } from 'react-icons/fa6';
 import Dashboard from '../components/dropdowns/Dashboard';
-import OppositeContentTimeline from './timeline';
-
 const siderStyle = {
     overflow: 'auto',
     // position: 'absolute',
@@ -155,7 +153,7 @@ const App = () => {
                                 />
                                 <Dashboard />
                             </div>
-                            <OppositeContentTimeline/>
+                            {/* <OppositeContentTimeline/> */}
                         </div>
                     </div>
                 </Content>
