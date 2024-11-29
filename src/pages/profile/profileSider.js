@@ -14,7 +14,7 @@ const siderStyle = {
   insetInlineStart: 0,
   // background: 'white',
   // width: 280,
-  height: 700,
+  height: '100%',
   top: 0,
   bottom: 0,
   scrollbarWidth: 'thick',
@@ -32,7 +32,7 @@ const items = [
     icon: <RxDashboard className='fs-6' />
   },
   {
-    key: 'sub1',
+    key: 'sub2',
     label: 'Components',
     icon: <RxDashboard />,
     children: [
@@ -100,14 +100,14 @@ const items = [
           </a>,
       },
       {
-        key: '35',
+        key: '14',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/tabs">
             Tabs
           </a>,
       },
       {
-        key: '1',
+        key: '35',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/pagination">
             Pagination
@@ -137,7 +137,7 @@ const items = [
     ],
   },
   {
-    key: 'sub2',
+    key: 'sub4',
     label: 'Forms',
     icon: <AppstoreOutlined />,
     children: [
@@ -149,7 +149,7 @@ const items = [
           </a>,
       },
       {
-        key: '14',
+        key: '16',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/form_layout">
             Form Layouts
@@ -163,7 +163,7 @@ const items = [
           </a>,
       },
       {
-        key: '16',
+        key: '17',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/form_validation">
             Form Validation
@@ -172,19 +172,19 @@ const items = [
     ],
   },
   {
-    key: 'sub4',
+    key: 'sub7',
     label: 'Tables',
     icon: <SettingOutlined />,
     children: [
       {
-        key: '17',
+        key: '18',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/general_table">
             General Tables
           </a>,
       },
       {
-        key: '18',
+        key: '2',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/data_table">
             Data Tables
@@ -254,7 +254,7 @@ const items = [
     type: 'group',
     children: [
       {
-        key: '2',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/profile">
             Profile
@@ -313,14 +313,14 @@ const items = [
     ],
   },
 ];
-const PageSider = () => {
+const ProfileSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
   return (
     <Menu
       onClick={onClick}
-      // style={siderStyle}
+      style={siderStyle}
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
       mode="inline"
@@ -328,4 +328,4 @@ const PageSider = () => {
     />
   );
 };
-export default PageSider;
+export default ProfileSider;

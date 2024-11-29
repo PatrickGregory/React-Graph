@@ -80,3 +80,19 @@
 .modalHeight{
     min-height: 80rem !important;
 }
+
+/* profile page */
+
+.hover:hover{
+    color: rgb(52, 52, 243);
+}
+
+.center{
+    margin-left: 14rem;
+    margin-top: 1rem;
+}
+@media screen and (max-width: 820px){
+    .center{
+        margin-left: 8rem !important;
+    }
+}

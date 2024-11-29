@@ -256,7 +256,7 @@ const items = [
       {
         key: '2',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/profile">
             Profile
           </a>,
         icon: <MdPersonOutline className='fs-5' />
@@ -264,7 +264,7 @@ const items = [
       {
         key: '3',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/faq">
             F.A.Q.
           </a>,
         icon: <BsQuestionCircle className='fs-6' />

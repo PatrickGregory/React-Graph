@@ -22,6 +22,7 @@ import LayoutPage from './pages/form layout/layoutPage';
 import ValidationPage from './pages/form validation/validationPage';
 import TablePage from './pages/General Tables/TablePage';
 import DataPage from './pages/Data Table/DataPage'; 
+import ProfilePage from './pages/profile/profilePage';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           <Route path='/form_validation' element={<ValidationPage/>}/>
           <Route path='/general_table' element={<TablePage/>}/>
           <Route path='/data_table' element={<DataPage/>}/>
+          <Route path='/profile' element={<ProfilePage/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
