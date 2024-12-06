@@ -158,7 +158,7 @@ const items = [
       {
         key: '15',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/form_editor">
             Form Editors
           </a>,
       },
@@ -228,21 +228,21 @@ const items = [
       {
         key: '26',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/bootstrap">
             Bootstrap Icons
           </a>,
       },
       {
         key: '27',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/remix">
             Remix Icons
           </a>,
       },
       {
         key: '28',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/boxicons">
             Boxicons
           </a>,
       },
@@ -272,7 +272,7 @@ const items = [
       {
         key: '4',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/contact">
             Contact
           </a>,
         icon: <BsEnvelope className='fs-6' />
@@ -280,7 +280,7 @@ const items = [
       {
         key: '5',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" target='_blank' href="/register">
             Register
           </a>,
         icon: <BsCardList className='fs-6' />
@@ -288,7 +288,7 @@ const items = [
       {
         key: '6',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" target='_blank' href="/login">
             Login
           </a>,
         icon: <RiLoginBoxLine className='fs-6' />
@@ -296,7 +296,7 @@ const items = [
       {
         key: '7',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" target='_blank' href="/error">
             Error 404
           </a>,
         icon: <SlMinus className='fs-6' />
@@ -304,7 +304,7 @@ const items = [
       {
         key: '8',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/blank">
             Blank
           </a>
         ,

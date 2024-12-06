@@ -10,10 +10,10 @@ import { Menu } from 'antd';
 
 const siderStyle = {
   overflow: 'auto',
-  position: 'fixed',
+  // position: 'fixed',
   insetInlineStart: 0,
   // background: 'white',
-  width: 280,
+  height: 700,
   top: 0,
   bottom: 0,
   scrollbarWidth: 'thick',
@@ -31,7 +31,7 @@ const items = [
     icon: <RxDashboard className='fs-6' />
   },
   {
-    key: 'sub1',
+    key: 'sub2',
     label: 'Components',
     icon: <RxDashboard />,
     children: [
@@ -78,7 +78,7 @@ const items = [
           </a>,
       },
       {
-        key: '1',
+        key: '13',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/carousel">
             Carousel
@@ -136,12 +136,12 @@ const items = [
     ],
   },
   {
-    key: 'sub2',
+    key: 'sub1',
     label: 'Forms',
     icon: <AppstoreOutlined />,
     children: [
       {
-        key: '13',
+        key: '15',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/form_elements">
             Form Elements
@@ -155,7 +155,7 @@ const items = [
           </a>,
       },
       {
-        key: '15',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/form_editor">
             Form Editors
@@ -312,7 +312,7 @@ const items = [
     ],
   },
 ];
-const CarouselSider = () => {
+const EditorSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
@@ -327,4 +327,4 @@ const CarouselSider = () => {
     />
   );
 };
-export default CarouselSider;
+export default EditorSider;

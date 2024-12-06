@@ -96,3 +96,14 @@
         margin-left: 8rem !important;
     }
 }
+
+/* contact page */
+.remove-round{
+    border-radius: 0px !important;
+}
+
+/* Error page */
+.font{
+    font-size: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

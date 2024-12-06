@@ -23,6 +23,16 @@ import ValidationPage from './pages/form validation/validationPage';
 import TablePage from './pages/General Tables/TablePage';
 import DataPage from './pages/Data Table/DataPage'; 
 import ProfilePage from './pages/profile/profilePage';
+import FaqPage from './pages/FAQ/faqPage';
+import ContactPage from './pages/contact/ContactPage';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import Error from './pages/Error';
+import BlankPage from './pages/blank/blankPage';
+import FormEditor from './pages/form editor/formEditor';
+import BsPage from './pages/Bootstrap/BsPage';
+import RemixPage from './pages/Remix/RemixPage';
+import BoxPage from './pages/Box/BoxPage';
 
 function App() {
   return (
@@ -50,6 +60,16 @@ function App() {
           <Route path='/general_table' element={<TablePage/>}/>
           <Route path='/data_table' element={<DataPage/>}/>
           <Route path='/profile' element={<ProfilePage/>}/>
+          <Route path='/faq' element={<FaqPage/>}/>
+          <Route path='/contact' element={<ContactPage/>}/>
+          <Route path='/register' element={<Register/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/error' element={<Error/>}/>
+          <Route path='/blank' element={<BlankPage/>}/>
+          <Route path='/form_editor' element={<FormEditor/>}/>
+          <Route path='/bootstrap' element={<BsPage/>}/>
+          <Route path='/remix' element={<RemixPage/>}/>
+          <Route path='/boxicons' element={<BoxPage/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

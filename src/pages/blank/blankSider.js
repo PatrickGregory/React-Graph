@@ -31,7 +31,7 @@ const items = [
     icon: <RxDashboard className='fs-6' />
   },
   {
-    key: 'sub1',
+    key: 'sub7',
     label: 'Components',
     icon: <RxDashboard />,
     children: [
@@ -50,7 +50,7 @@ const items = [
           </a>,
       },
       {
-        key: '31',
+        key: '8',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/badges">
             Badges
@@ -78,7 +78,7 @@ const items = [
           </a>,
       },
       {
-        key: '1',
+        key: '31',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/carousel">
             Carousel
@@ -301,7 +301,7 @@ const items = [
         icon: <SlMinus className='fs-6' />
       },
       {
-        key: '8',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/blank">
             Blank
@@ -312,7 +312,7 @@ const items = [
     ],
   },
 ];
-const CarouselSider = () => {
+const BlankSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
@@ -327,4 +327,4 @@ const CarouselSider = () => {
     />
   );
 };
-export default CarouselSider;
+export default BlankSider;

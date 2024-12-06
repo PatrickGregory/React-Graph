@@ -31,7 +31,7 @@ const items = [
     icon: <RxDashboard className='fs-6' />
   },
   {
-    key: 'sub1',
+    key: 'sub6',
     label: 'Components',
     icon: <RxDashboard />,
     children: [
@@ -43,14 +43,14 @@ const items = [
           </a>,
       },
       {
-        key: '11',
+        key: '28',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/accordion">
             Accordion
           </a>,
       },
       {
-        key: '31',
+        key: '11',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/badges">
             Badges
@@ -78,7 +78,7 @@ const items = [
           </a>,
       },
       {
-        key: '1',
+        key: '31',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/carousel">
             Carousel
@@ -220,7 +220,7 @@ const items = [
     ],
   },
   {
-    key: 'sub6',
+    key: 'sub1',
     label: 'Icons',
     icon: <SettingOutlined />,
     children: [
@@ -239,9 +239,9 @@ const items = [
           </a>,
       },
       {
-        key: '28',
+        key: '1',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="/boxicons">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
             Boxicons
           </a>,
       },
@@ -312,7 +312,7 @@ const items = [
     ],
   },
 ];
-const CarouselSider = () => {
+const BoxSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
@@ -327,4 +327,4 @@ const CarouselSider = () => {
     />
   );
 };
-export default CarouselSider;
+export default BoxSider;
