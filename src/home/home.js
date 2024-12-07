@@ -9,6 +9,9 @@ import { GridBreadcrumbs, MainBreadcrumbProp } from '../components/props';
 import { BsCart, BsCurrencyDollar, BsPeople } from 'react-icons/bs';
 import { FaDollarSign } from 'react-icons/fa6';
 import Dashboard from '../components/dropdowns/Dashboard';
+import Timeline from './timeline';
+import { HomeTable, NoBorder } from './homeTable';
+import PieChart from './echart';
 const siderStyle = {
     overflow: 'auto',
     // position: 'absolute',
@@ -120,7 +123,7 @@ const App = () => {
                                             <BsCurrencyDollar className='fs-1 text-success icon-edit' />
                                         </div>
                                         <div>
-                                            <h1 className='text-primary-emphasis'><FaDollarSign />3,264</h1>
+                                            <h1 className='text-primary-emphasis d-flex'><FaDollarSign />3,264</h1>
                                             <p className='text-success fs-6 fw-bold'>8%<span className='text-secondary ms-2 fw-medium'>increase</span></p>
                                         </div>
                                     </div>
@@ -144,16 +147,49 @@ const App = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className='col-lg-4 mt-4 p-3 shadow rounded container'>
-                            <div className="d-flex">
-                                <GridBreadcrumbs
-                                    active='Recent Activity'
-                                    inactive='Today'
-                                />
-                                <Dashboard />
+                            <div className='col-lg-11 p-3 shadow rounded container mt-3'>
+                                <div className="d-flex">
+                                    <GridBreadcrumbs
+                                        active='Top Selling'
+                                        inactive='Today'
+                                    />
+                                    <Dashboard />
+                                </div>
+                                <div><HomeTable /></div>
                             </div>
-                            {/* <OppositeContentTimeline/> */}
+                            <div className='col-lg-11 p-3 shadow rounded container mt-3'>
+                                <div className="d-flex">
+                                    <GridBreadcrumbs
+                                        active='Top Selling'
+                                        inactive='Today'
+                                    />
+                                    <Dashboard />
+                                </div>
+                                <div><NoBorder /></div>
+                            </div>
+                        </div>
+                        <div className='col-lg-4 '>
+                            <div className='mt-4 p-3 shadow rounded container'>
+                                <div className="d-flex">
+                                    <GridBreadcrumbs
+                                        active='Recent Activity'
+                                        inactive='Today'
+                                    />
+                                    <Dashboard />
+                                </div>
+                                {/* <OppositeContentTimeline/> */}
+                                <Timeline />
+                            </div>
+                            <div className='mt-4 p-3 shadow rounded container'>
+                                <div className="d-flex">
+                                    <GridBreadcrumbs
+                                        active='Website Traffic'
+                                        inactive='Today'
+                                    />
+                                    <Dashboard />
+                                </div>
+                                <PieChart />
+                            </div>
                         </div>
                     </div>
                 </Content>

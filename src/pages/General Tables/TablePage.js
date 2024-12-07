@@ -107,7 +107,7 @@ function TablePage() {
                                 <div><Default style='table-borderless'/></div>
                             </div>
                             <div className='card p-4 my-3'>
-                                <h5 className='text-primary-emphasis mt-1 mb-1'>Table without borders</h5>
+                                <h5 className='text-primary-emphasis mt-1 mb-1'>Table Variants</h5>
                                 <p className='fs-6'>Use contextual classes <span className='text-danger'>.table-primary .table-secondary .table-success .table-danger .table-warning .table-info .table-light .table-dark</span> to color tables, table rows or individual cells.</p>
                                 <div><Colors/></div>
                             </div>

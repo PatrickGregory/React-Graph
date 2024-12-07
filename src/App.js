@@ -33,6 +33,8 @@ import FormEditor from './pages/form editor/formEditor';
 import BsPage from './pages/Bootstrap/BsPage';
 import RemixPage from './pages/Remix/RemixPage';
 import BoxPage from './pages/Box/BoxPage';
+import Test from './home/test';
+import Chart from './home/echart';
 
 function App() {
   return (
@@ -70,6 +72,7 @@ function App() {
           <Route path='/bootstrap' element={<BsPage/>}/>
           <Route path='/remix' element={<RemixPage/>}/>
           <Route path='/boxicons' element={<BoxPage/>}/>
+          <Route path='/test' element={<Chart/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
