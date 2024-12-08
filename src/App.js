@@ -72,7 +72,6 @@ function App() {
           <Route path='/bootstrap' element={<BsPage/>}/>
           <Route path='/remix' element={<RemixPage/>}/>
           <Route path='/boxicons' element={<BoxPage/>}/>
-          <Route path='/test' element={<Chart/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

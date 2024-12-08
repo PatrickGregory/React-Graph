@@ -11,7 +11,7 @@ import { FaDollarSign } from 'react-icons/fa6';
 import Dashboard from '../components/dropdowns/Dashboard';
 import Timeline from './timeline';
 import { HomeTable, NoBorder } from './homeTable';
-import PieChart from './echart';
+import { PieChart, Radar } from './echart';
 const siderStyle = {
     overflow: 'auto',
     // position: 'absolute',
@@ -179,6 +179,18 @@ const App = () => {
                                 </div>
                                 {/* <OppositeContentTimeline/> */}
                                 <Timeline />
+                            </div>
+                            <div className='mt-4 p-3 shadow rounded container'>
+                                <div className="d-flex">
+                                    <GridBreadcrumbs
+                                        active='Budget Report'
+                                        inactive='This Month'
+                                    />
+                                    <Dashboard />
+                                </div>
+                                <div className='container'>
+                                    <Radar />
+                                </div>
                             </div>
                             <div className='mt-4 p-3 shadow rounded container'>
                                 <div className="d-flex">
