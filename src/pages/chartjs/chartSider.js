@@ -10,12 +10,13 @@ import { Menu } from 'antd';
 
 const siderStyle = {
   overflow: 'auto',
-  position: 'fixed',
+//   position: 'fixed',
   insetInlineStart: 0,
-  // background: 'white',
-  width: 280,
-  top: 0,
-  bottom: 0,
+  background: 'white',
+//   width: 280,
+//   height: '100dvh',
+//   top: 0,
+//   bottom: 0,
   scrollbarWidth: 'thick',
   scrollbarColor: 'unset',
 };
@@ -23,7 +24,7 @@ const siderStyle = {
 const items = [
 
   {
-    key: '1',
+    key: '23',
     label: 
     <a className='text-decoration-none' rel="noopener noreferrer" href="/">
       Dashboard
@@ -31,7 +32,7 @@ const items = [
     icon: <RxDashboard className='fs-6' />
   },
   {
-    key: 'sub3',
+    key: 'sub5',
     label: 'Components',
     icon: <RxDashboard />,
     children: [
@@ -192,26 +193,26 @@ const items = [
     ],
   },
   {
-    key: 'sub5',
+    key: 'sub1',
     label: 'Charts',
     icon: <SettingOutlined />,
     children: [
       {
-        key: '21',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/chartJs">
             Chart.js
           </a>,
       },
       {
-        key: '22',
+        key: '21',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/apex">
             ApexCharts
           </a>,
       },
       {
-        key: '23',
+        key: '22',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/echart">
             ECharts
@@ -312,14 +313,14 @@ const items = [
     ],
   },
 ];
-const SiderMenu = () => {
+const ChartSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
   return (
     <Menu
       onClick={onClick}
-      // style={siderStyle}
+    //   style={siderStyle}
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
       mode="inline"
@@ -327,4 +328,4 @@ const SiderMenu = () => {
     />
   );
 };
-export default SiderMenu;
+export default ChartSider;

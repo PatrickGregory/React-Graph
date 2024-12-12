@@ -14,10 +14,11 @@ import { HomeTable, NoBorder } from './homeTable';
 import { PieChart, Radar } from './echart';
 const siderStyle = {
     overflow: 'auto',
-    // position: 'absolute',
-    insetInlineStart: 0,
-    // background: 'white',
+    position: 'sticky',
+    insetInlineStart: 10,
+    backgroundColor: 'white',
     width: 280,
+    height: '100dvh',
     top: 0,
     bottom: 0,
     scrollbarWidth: 'thick',

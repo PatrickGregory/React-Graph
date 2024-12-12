@@ -13,10 +13,11 @@ import { AlertHeader, AlertTwo } from './alerttwo';
 
 const siderStyle = {
   overflow: 'auto',
-  position: 'relative',
-  insetInlineStart: 0,
-  // background: 'white',
+  position: 'sticky',
+  insetInlineStart: 10,
+  backgroundColor: 'white',
   width: 280,
+  height: '100dvh',
   top: 0,
   bottom: 0,
   scrollbarWidth: 'thick',
@@ -71,7 +72,7 @@ function Alerts() {
             console.log(collapsed, type);
           }}
           trigger={null} collapsible collapsed={collapsed}
-          className='sider-style mt-1 h-100 '
+          className='sider-style mt-1'
         >
           <AlertSider />
         </Sider>
@@ -87,7 +88,7 @@ function Alerts() {
             pageone='Components'
             page="Home"
           />
-          <div className='row container'>
+          <div className='row container' style={{maxHeight:"inherit"}}>
             <div className='col-lg-6 fs-6 col-md-6 col-sm-6 card h-50 p-2 mx-3'>
               <h5 className='text-primary-emphasis'>Default</h5>
               <AlertOne />

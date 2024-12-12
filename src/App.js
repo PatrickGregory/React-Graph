@@ -37,6 +37,7 @@ import Test from './home/test';
 import Chart from './home/echart';
 import ChartPage from './pages/echarts/chartPage';
 import ApexPage from './pages/apex/chartPage';
+import ChartJsPage from './pages/chartjs/chartPage';
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
           <Route path='/boxicons' element={<BoxPage/>}/>
           <Route path='/echart' element={<ChartPage/>}/>
           <Route path='/apex' element={<ApexPage/>}/>
+          <Route path='/chartJs' element={<ChartJsPage/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

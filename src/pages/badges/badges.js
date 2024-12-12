@@ -21,14 +21,14 @@ export const Badges = (props) => {
 export const IconBadge = () => {
     return (
         <div className='gap-1 my-4 row container'>
-            <div className={`badge col-2 text-bg-primary`}><BsStar className='me-1' />Primary</div>
-            <div className={`badge col-3 text-bg-secondary`}><BsCollection className='me-1' />Secondary</div>
-            <div className={`badge col-2 text-bg-success`}><BsCheckCircle className='me-1' />Success</div>
-            <div className={`badge col-2 text-bg-danger`}><BsExclamationOctagon className='me-1' />Danger</div>
-            <div className={`badge col-2 text-bg-warning`}><BsExclamationTriangle className='me-1' />Warning</div>
-            <div className={`badge col-2 text-bg-info`}><BsInfoCircle className='me-1' />Info</div>
-            <div className={`badge col-2 text-bg-light`}><BsStar className='me-1' />Light</div>
-            <div className={`badge col-2 text-bg-dark`}><BsFolder className='me-1' />Dark</div>
+            <div className={`badge w-25 col-2 text-bg-primary`}><BsStar />Primary</div>
+            <div className={`badge w-25 col-3 text-bg-secondary`}><BsCollection className='me-1' />Secondary</div>
+            <div className={`badge w-25 col-2 text-bg-success`}><BsCheckCircle className='me-1' />Success</div>
+            <div className={`badge w-25 col-2 text-bg-danger`}><BsExclamationOctagon className='me-1' />Danger</div>
+            <div className={`badge w-25 col-2 text-bg-warning`}><BsExclamationTriangle className='me-1' />Warning</div>
+            <div className={`badge w-25 col-2 text-bg-info`}><BsInfoCircle className='me-1' />Info</div>
+            <div className={`badge w-25 col-2 text-bg-light`}><BsStar className='me-1' />Light</div>
+            <div className={`badge w-25 col-2 text-bg-dark`}><BsFolder className='me-1' />Dark</div>
         </div>
     )
 }
