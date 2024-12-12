@@ -12,19 +12,19 @@ const siderStyle = {
   overflow: 'auto',
 //   position: 'fixed',
   insetInlineStart: 0,
-  // background: 'white',
-  width: 280,
-  top: 0,
-  bottom: 0,
+  background: 'white',
+//   width: 280,
+//   height: '100dvh',
+//   top: 0,
+//   bottom: 0,
   scrollbarWidth: 'thick',
   scrollbarColor: 'unset',
 };
 
-
 const items = [
 
   {
-    key: '9',
+    key: '23',
     label: 
     <a className='text-decoration-none' rel="noopener noreferrer" href="/">
       Dashboard
@@ -32,12 +32,12 @@ const items = [
     icon: <RxDashboard className='fs-6' />
   },
   {
-    key: 'sub1',
+    key: 'sub5',
     label: 'Components',
     icon: <RxDashboard />,
     children: [
       {
-        key: '1',
+        key: '9',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/alert">
             Alert
@@ -193,7 +193,7 @@ const items = [
     ],
   },
   {
-    key: 'sub5',
+    key: 'sub1',
     label: 'Charts',
     icon: <SettingOutlined />,
     children: [
@@ -205,14 +205,14 @@ const items = [
           </a>,
       },
       {
-        key: '22',
+        key: '1',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/apex">
             ApexCharts
           </a>,
       },
       {
-        key: '23',
+        key: '22',
         label:
           <a className='text-decoration-none' rel="noopener noreferrer" href="/echart">
             ECharts
@@ -313,14 +313,14 @@ const items = [
     ],
   },
 ];
-const AlertSider = () => {
+const ChartSider = () => {
   const onClick = (e) => {
     console.log('click ', e);
   };
   return (
     <Menu
       onClick={onClick}
-      // style={siderStyle}
+    //   style={siderStyle}
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
       mode="inline"
@@ -328,4 +328,4 @@ const AlertSider = () => {
     />
   );
 };
-export default AlertSider;
+export default ChartSider;

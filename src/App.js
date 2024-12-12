@@ -35,6 +35,8 @@ import RemixPage from './pages/Remix/RemixPage';
 import BoxPage from './pages/Box/BoxPage';
 import Test from './home/test';
 import Chart from './home/echart';
+import ChartPage from './pages/echarts/chartPage';
+import ApexPage from './pages/apex/chartPage';
 
 function App() {
   return (
@@ -72,6 +74,8 @@ function App() {
           <Route path='/bootstrap' element={<BsPage/>}/>
           <Route path='/remix' element={<RemixPage/>}/>
           <Route path='/boxicons' element={<BoxPage/>}/>
+          <Route path='/echart' element={<ChartPage/>}/>
+          <Route path='/apex' element={<ApexPage/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

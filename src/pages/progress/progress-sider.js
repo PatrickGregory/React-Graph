@@ -200,21 +200,21 @@ const items = [
       {
         key: '21',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/chartJs">
             Chart.js
           </a>,
       },
       {
         key: '22',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/apex">
             ApexCharts
           </a>,
       },
       {
         key: '23',
         label:
-          <a className='text-decoration-none' rel="noopener noreferrer" href="https://www.luohanacademy.com">
+          <a className='text-decoration-none' rel="noopener noreferrer" href="/echart">
             ECharts
           </a>,
       },
