@@ -40,6 +40,13 @@
         margin-top: 1.2rem;
     }
 }
+.timeline{
+    transform: rotate(90deg);
+    border: 3px solid black;
+    width: 2rem;
+    margin-left: 27%;
+    margin-top: -2rem;
+}
 /* alert styling */
 .alert-margin{
     margin-top: -10rem !important;

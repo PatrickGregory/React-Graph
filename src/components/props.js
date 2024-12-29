@@ -88,3 +88,15 @@ export const ButtonProp = (props) => {
       </div>
   )
 }
+
+export  const HomeNews = ({ image, title, content }) => {
+  return (
+    <div className='d-flex gap-2'>
+        <img src={image} className='h-25 w-25 rounded' alt="preview" />
+        <div>
+          <a href="#" className='text-decoration-none fw-bold text-primary-emphasis'>{title}</a>
+          <p className='text-secondary'>{content}</p>
+        </div>
+    </div>
+  )
+}

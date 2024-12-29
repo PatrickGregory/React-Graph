@@ -12,6 +12,8 @@ import Dashboard from '../components/dropdowns/Dashboard';
 import Timeline from './timeline';
 import { HomeTable, NoBorder } from './homeTable';
 import { PieChart, Radar } from './echart';
+import News from './news';
+import { HomeGradient } from '../pages/apex/charts';
 const siderStyle = {
     overflow: 'auto',
     position: 'sticky',
@@ -151,6 +153,16 @@ const App = () => {
                             <div className='col-lg-11 p-3 shadow rounded container mt-3'>
                                 <div className="d-flex">
                                     <GridBreadcrumbs
+                                        active='Reports'
+                                        inactive='Today'
+                                    />
+                                    <Dashboard />
+                                </div>
+                                <div><HomeGradient /></div>
+                            </div>
+                            <div className='col-lg-11 p-3 shadow rounded container mt-3'>
+                                <div className="d-flex">
+                                    <GridBreadcrumbs
                                         active='Top Selling'
                                         inactive='Today'
                                     />
@@ -178,7 +190,6 @@ const App = () => {
                                     />
                                     <Dashboard />
                                 </div>
-                                {/* <OppositeContentTimeline/> */}
                                 <Timeline />
                             </div>
                             <div className='mt-4 p-3 shadow rounded container'>
@@ -202,6 +213,16 @@ const App = () => {
                                     <Dashboard />
                                 </div>
                                 <PieChart />
+                            </div>
+                            <div className='mt-4 p-3 shadow rounded container'>
+                                <div className="d-flex">
+                                    <GridBreadcrumbs
+                                        active='News & Updates'
+                                        inactive='Today'
+                                    />
+                                    <Dashboard />
+                                </div>
+                                <News/>
                             </div>
                         </div>
                     </div>
