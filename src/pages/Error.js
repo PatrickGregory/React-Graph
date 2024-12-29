@@ -10,7 +10,7 @@ function Error() {
                 <div>
                     <img src="./images/not-found.svg" className='w-50' alt="error" />
                 </div>
-                <p className='fs-6'>Designed by <a href="https://github.com/PatrickGregory" className='text-decoration-none' target='_blank'>Kantee Da Dev</a></p>
+                <p className='fs-6'>Designed by <a href="https://www.linkedin.com/in/patrick-emeka/" className='text-decoration-none' target='_blank'>Kantee Da Dev</a></p>
             </div>
         </div>
     )

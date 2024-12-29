@@ -12,11 +12,11 @@ import { BasicModal, Center, ModalSize, NoAnimation, NoBackDrop, ScrollModal} fr
 
 const siderStyle = {
     overflow: 'auto',
-    // position: 'absolute',
-    insetInlineStart: 0,
-    // background: 'white',
+    position: 'sticky',
+    insetInlineStart: 10,
+    backgroundColor: 'white',
     width: 280,
-    height: 1200,
+    height: '100dvh',
     top: 0,
     bottom: 0,
     scrollbarWidth: 'thick',
