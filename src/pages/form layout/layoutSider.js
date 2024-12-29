@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
-import { BsQuestionCircle, BsEnvelope, BsCardList } from "react-icons/bs";
+import { BsQuestionCircle, BsEnvelope, BsCardList, BsMenuButtonWide, BsJournalText } from "react-icons/bs";
 import { SlMinus } from "react-icons/sl";
 import { FaRegFile } from "react-icons/fa6";
 import { MdPersonOutline } from "react-icons/md";
@@ -34,7 +34,7 @@ const items = [
   {
     key: 'sub2',
     label: 'Components',
-    icon: <RxDashboard />,
+    icon: <BsMenuButtonWide />,
     children: [
       {
         key: '9',
@@ -139,7 +139,7 @@ const items = [
   {
     key: 'sub1',
     label: 'Forms',
-    icon: <AppstoreOutlined />,
+    icon: <BsJournalText />,
     children: [
       {
         key: '13',

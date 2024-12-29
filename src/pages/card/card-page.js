@@ -69,7 +69,7 @@ function CardPage() {
                         console.log(collapsed, type);
                     }}
                     trigger={null} collapsible collapsed={collapsed}
-                    className='sider-style h-100 mt-1'
+                    className='sider-style mt-1'
                 >
                     <CardSider />
                 </Sider>
