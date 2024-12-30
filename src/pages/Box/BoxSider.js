@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
-import { BsQuestionCircle, BsEnvelope, BsCardList, BsMenuButtonWide, BsJournalText } from "react-icons/bs";
+import { BsQuestionCircle, BsEnvelope, BsCardList, BsMenuButtonWide, BsJournalText, BsLayoutTextWindowReverse, BsBarChart, BsGem } from "react-icons/bs";
 import { SlMinus } from "react-icons/sl";
 import { FaRegFile } from "react-icons/fa6";
 import { MdPersonOutline } from "react-icons/md";
@@ -173,7 +173,7 @@ const items = [
   {
     key: 'sub4',
     label: 'Tables',
-    icon: <SettingOutlined />,
+    icon: <BsLayoutTextWindowReverse />,
     children: [
       {
         key: '17',
@@ -194,7 +194,7 @@ const items = [
   {
     key: 'sub5',
     label: 'Charts',
-    icon: <SettingOutlined />,
+    icon: <BsBarChart />,
     children: [
       {
         key: '21',
@@ -222,7 +222,7 @@ const items = [
   {
     key: 'sub1',
     label: 'Icons',
-    icon: <SettingOutlined />,
+    icon: <BsGem />,
     children: [
       {
         key: '26',

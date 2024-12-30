@@ -87,7 +87,7 @@ function ContactPage() {
                         pageone='Pages'
                         div='Contact'
                     />
-                    <div className="row">
+                    <div className="row justify-content-center">
                         <div className='row gap-4 gy-2 col-12 col-lg-6'>
                             <div className="card shadow col-lg-5 col-md-5 p-4 col-12">
                             <ContactIcon
