@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import DataTable from 'react-data-table-component'
+import { HomeBadge } from '../pages/badges/badges'
 
 
 export const HomeTable = () => {
@@ -35,43 +36,43 @@ export const HomeTable = () => {
     const data = [
         {
             id: 1,
-            identify: <a href="#" className='text-decoration-none'>2457</a>,
+            identify: <a href="#" className='text-decoration-none'>#2457</a>,
             customer: 'Brandon Jacob',
-            product: 'At praesentium minu',
-            price: '$64',
-            status: 'Approved'
+            product: <a href="#" className='text-decoration-none'>At praesentium minu</a>,
+            price: `$${64}`,
+            status: <HomeBadge color='success' text='Approved'/>
         },
         {
             id: 2,
-            name: 'kantee deeDev',
-            ext: '555-0125',
-            city: 'Los Angeles',
-            start: '2013-04-11',
-            completion: 90
+            identify: <a href="#" className='text-decoration-none'>#2147</a>,
+            customer: 'Birdie Kessler',
+            product: <a href="#" className='text-decoration-none'>Blanditiis dolor omnis similique</a>,
+            price: `$${47}`,
+            status: <HomeBadge color='warning' text='Pending' />
         },
         {
             id: 3,
-            name: 'Emilia Doe',
-            ext: '555-0124',
-            city: 'New Jersey',
-            start: '2015-10-12',
-            completion: 85
+            identify: <a href="#" className='text-decoration-none'>#2049</a>,
+            customer: 'Ashleigh Langosh',
+            product: <a href="#" className='text-decoration-none'>	At recusandae consectetur</a>,
+            price: `$${147}`,
+            status: <HomeBadge color='success' text='Approved' />
         },
         {
             id: 4,
-            name: 'John Stewart',
-            ext: '545-0123',
-            city: 'London',
-            start: '2020-08-21',
-            completion: 59
+            identify: <a href="#" className='text-decoration-none'>#2644</a>,
+            customer: 'Angus Grady',
+            product: <a href="#" className='text-decoration-none'>	Ut voluptatem id earum et</a>,
+            price: `$${67}`,
+            status: <HomeBadge color='danger' text='Rejected' />
         },
         {
             id: 5,
-            name: 'Patrick Joe',
-            ext: '655-0123',
-            city: 'Lagos',
-            start: '2021-04-01',
-            completion: 30
+            identify: <a href="#" className='text-decoration-none'>#2549</a>,
+            customer: 'Raheem Lehner',
+            product: <a href="#" className='text-decoration-none'>Sunt similique distinctio</a>,
+            price: `$${165}`,
+            status: <HomeBadge color='success' text='Approved' />
         },
     ]
 

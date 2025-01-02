@@ -18,6 +18,12 @@ export const Badges = (props) => {
     )
 }
 
+export const HomeBadge = ({color,text}) => {
+    return(
+        <span className={`badge text-bg-${color}`}>{text}</span>
+    )
+}
+
 export const IconBadge = () => {
     return (
         <div className='gap-1 my-4 row container'>

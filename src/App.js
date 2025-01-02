@@ -33,8 +33,6 @@ import FormEditor from './pages/form editor/formEditor';
 import BsPage from './pages/Bootstrap/BsPage';
 import RemixPage from './pages/Remix/RemixPage';
 import BoxPage from './pages/Box/BoxPage';
-import Test from './home/test';
-import Chart from './home/echart';
 import ChartPage from './pages/echarts/chartPage';
 import ApexPage from './pages/apex/chartPage';
 import ChartJsPage from './pages/chartjs/chartPage';

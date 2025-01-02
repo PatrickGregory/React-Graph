@@ -92,7 +92,7 @@ const App = () => {
                         page='Home'
                         div='Dashboard'
                     />
-                    <div className='row'>
+                    <div className='row justify-content-center'>
                         <div className='col-lg-8 h-50 row gy-3'>
                             <div className='col-lg-12 gx-1 row'>
                                 <div className='col-lg-5 col-sm-6 container p-3 shadow mt-3 rounded'>
