@@ -50,14 +50,18 @@
 .timeline1{
     transform: rotate(90deg);
     border: 3px solid black;
-    width: 2rem;
-     margin-left: 27%;
+    width: 4rem;
+    margin-left: 27%;
     margin-top: -2.7rem;
 }
 @media screen and (max-width: 425px) {
     .timeline{
         margin-top: -0.8rem;
         margin-left: 26.5%;
+    }
+    .timeline1{
+        margin-top: -0.8rem;
+        margin-left: 25%;
     }
 }
 @media screen and (max-width: 768px) {
@@ -66,11 +70,20 @@
         margin-left: 25.8%;
     }
 }
+@media screen and (max-width: 1240px) {
+    .timeline1{
+        margin-top: -2rem;
+        margin-left: 20.5%;
+    }
+}
 @media screen and (min-width: 1440px) {
     .timeline{
         margin-top: -0.7rem;
         margin-left: 26.5%;
     }
+}
+.timeline-dot{
+    margin-left: 5%;
 }
 /* alert styling */
 .alert-margin{

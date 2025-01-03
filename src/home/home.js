@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineMenu } from "react-icons/ai";
-import { Breadcrumb, Button, Layout, theme } from 'antd';
+import { Button, Layout, theme } from 'antd';
 import CustomizedBadges from '../components/dropdowns/badged-bell';
 import ChatBadges from '../components/dropdowns/badged-chat';
 import Profile from '../components/dropdowns/profile';
@@ -9,11 +9,12 @@ import { GridBreadcrumbs, MainBreadcrumbProp } from '../components/props';
 import { BsCart, BsCurrencyDollar, BsPeople } from 'react-icons/bs';
 import { FaDollarSign } from 'react-icons/fa6';
 import Dashboard from '../components/dropdowns/Dashboard';
-import Timeline from './timeline';
 import { HomeTable, NoBorder } from './homeTable';
 import { PieChart, Radar } from './echart';
 import News from './news';
 import { HomeGradient } from '../pages/apex/charts';
+import HomeTimeline from './timeline';
+import OppositeContentTimeline from './timeline';
 const siderStyle = {
     overflow: 'auto',
     position: 'sticky',
@@ -190,7 +191,9 @@ const App = () => {
                                     />
                                     <Dashboard />
                                 </div>
-                                <Timeline />
+                                <div>
+                                    <OppositeContentTimeline/>
+                                </div>
                             </div>
                             <div className='mt-4 p-3 shadow rounded container'>
                                 <div className="d-flex">
