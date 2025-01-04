@@ -14,7 +14,7 @@ import { PieChart, Radar } from './echart';
 import News from './news';
 import { HomeGradient } from '../pages/apex/charts';
 import HomeTimeline from './timeline';
-import OppositeContentTimeline from './timeline';
+import Timeline from './timeline';
 const siderStyle = {
     overflow: 'auto',
     position: 'sticky',
@@ -164,14 +164,14 @@ const App = () => {
                             <div className='col-lg-11 p-3 shadow rounded container mt-3'>
                                 <div className="d-flex">
                                     <GridBreadcrumbs
-                                        active='Top Selling'
+                                        active='Recent Sales'
                                         inactive='Today'
                                     />
                                     <Dashboard />
                                 </div>
                                 <div><HomeTable /></div>
                             </div>
-                            <div className='col-lg-11 p-3 shadow rounded container mt-3'>
+                            <div className='col-lg-11 col-sm-12 p-3 shadow rounded container mt-3'>
                                 <div className="d-flex">
                                     <GridBreadcrumbs
                                         active='Top Selling'
@@ -183,7 +183,7 @@ const App = () => {
                             </div>
                         </div>
                         <div className='col-lg-4 '>
-                            <div className='mt-4 p-3 shadow rounded container'>
+                            <div className='mt-4 p-1 shadow rounded'>
                                 <div className="d-flex">
                                     <GridBreadcrumbs
                                         active='Recent Activity'
@@ -191,9 +191,7 @@ const App = () => {
                                     />
                                     <Dashboard />
                                 </div>
-                                <div>
-                                    <OppositeContentTimeline/>
-                                </div>
+                                <Timeline />
                             </div>
                             <div className='mt-4 p-3 shadow rounded container'>
                                 <div className="d-flex">
@@ -225,7 +223,7 @@ const App = () => {
                                     />
                                     <Dashboard />
                                 </div>
-                                <News/>
+                                <News />
                             </div>
                         </div>
                     </div>

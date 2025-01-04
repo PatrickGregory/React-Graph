@@ -1,55 +1,48 @@
-import React from 'react';
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import React from 'react'
 
-export default function OppositeContentTimeline() {
-  return (
-    <Timeline position="alternate">
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          09:30 am
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Eat</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          10:00 am
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          12:00 am
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Sleep</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          9:00 am
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Repeat</TimelineContent>
-      </TimelineItem>
-    </Timeline>
-  );
+function Timeline() {
+    return (
+        <div className='time-body'>
+            <div className='timeline'>
+                <div className="checkpoint">
+                    <div>
+                        <h6 className='text-secondary'>32 min ago</h6>
+                        <span>Quia quae rerum <span className='fw-bold'>explicabo officiis</span> beatae</span>
+                    </div>
+                </div>
+                <div className="checkpoint">
+                    <div>
+                        <h6 className='text-secondary'>56 min ago</h6>
+                        <span>Voluptatem blanditiis blanditiis eveniet</span>
+                    </div>
+                </div>
+                <div className="checkpoint">
+                    <div>
+                        <h6 className='text-secondary'>2 hrs ago</h6>
+                        <span>Voluptates corrupti molestias voluptatem</span>
+                    </div>
+                </div>
+                <div className="checkpoint">
+                    <div>
+                        <h6 className='text-secondary'>1 day ago</h6>
+                        <span>Tempore autem saepe <span className="fw-bold">occaecati voluptatem</span> tempore</span>
+                    </div>
+                </div>
+                <div className="checkpoint">
+                    <div>
+                        <h6 className='text-secondary'>2 days ago</h6>
+                        <span>Est sit eum reiciendis exercitationem</span>
+                    </div>
+                </div>
+                <div className="checkpoint">
+                    <div>
+                        <h6 className='text-secondary'>4 weeks ago</h6>
+                        <span>Dicta dolorem harum nulla eius. Ut quidem quidem sit quas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 }
+
+export default Timeline
