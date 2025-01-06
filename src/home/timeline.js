@@ -3,7 +3,7 @@ import React from 'react'
 function Timeline() {
     return (
         <div className='time-body'>
-            <div className='timeline'>
+            <div className='timeline table-responsive'>
                 <div className="checkpoint">
                     <div>
                         <h6 className='text-secondary'>32 min ago</h6>

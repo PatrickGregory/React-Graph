@@ -6,7 +6,7 @@ import ChatBadges from '../components/dropdowns/badged-chat';
 import Profile from '../components/dropdowns/profile';
 import SiderMenu from './sider-menu';
 import { GridBreadcrumbs, MainBreadcrumbProp } from '../components/props';
-import { BsCart, BsCurrencyDollar, BsPeople } from 'react-icons/bs';
+import { BsCart, BsCode, BsCurrencyDollar, BsPeople } from 'react-icons/bs';
 import { FaDollarSign } from 'react-icons/fa6';
 import Dashboard from '../components/dropdowns/Dashboard';
 import { HomeTable, NoBorder } from './homeTable';
@@ -50,10 +50,11 @@ const App = () => {
                     boxShadow: '0 2px 4px #312f2f53'
                 }}
             >
-                <div className="demo-logo" />
+                <div className='d-flex header-logo text-primary-emphasis'><h6 className='mt-1 fw-bold'>KD</h6><BsCode className='fs-4 fw-bold'/></div>
                 <Button
+                    className='ms-5'
                     type="text"
-                    icon={collapsed ? <AiOutlineMenu className='fs-4' /> : <AiOutlineMenu className='fs-4' />}
+                    icon={collapsed ? <AiOutlineMenu className='fs-4' /> : <AiOutlineMenu className='fs-6' />}
                     onClick={() => setCollapsed(!collapsed)}
                 />
                 <div></div>

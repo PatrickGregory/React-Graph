@@ -51,7 +51,7 @@ export default function Profile() {
         >
             <div className='d-flex gap-1 mt-3'>
                 <img className='rounded-circle profile-pic' src="./images/profile.jpg" alt="profile" />
-                <h6 className='text-primary-emphasis mt-1'>Kantee Da Dev</h6>
+                <h6 className='text-primary-emphasis mt-1'>KD</h6>
                 <IoMdArrowDropdown className='mt-2 text-primary-emphasis' />
             </div>
         </Dropdown>

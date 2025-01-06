@@ -5,6 +5,9 @@
     height: 2rem;
     width: 2rem;
 }
+.header-logo h6{
+    font-family:'Garamond';
+}
 
 /* sider-styling */
 
@@ -72,6 +75,9 @@
     border-left: 3px solid #888;
     padding-left: .03em;
     transform: translateX(7em);
+}
+.table-responsive{
+    overflow-x: scroll;
 }
 /* alert styling */
 .alert-margin{
