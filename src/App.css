@@ -8,6 +8,46 @@
 .header-logo h6{
     font-family:'Garamond';
 }
+.search-bar{
+    min-width: 260px;
+    border: 1.5px solid #052c65;
+    height: 3em;
+    margin-inline: 15em auto;
+}
+@media screen and (min-width: 992px) {
+    .search-responsive{
+        display: none;
+    }
+    .search-bar-responsive{
+        display: none;
+    }
+}
+@media screen and (max-width: 991px){
+    .search-bar{
+        display: none;
+    }
+    .search-bar-responsive{
+        max-width: 300px;
+        border: 1.5px solid #052c65;
+        height: 3em;
+    }
+    .search-bar-responsive form input{
+        border: none;
+        min-width: 120px;
+        outline: none;
+    }
+}
+.search-bar form{
+    margin-top: -1em;
+}
+.search-bar form input{
+    border: none;
+    min-width: 220px;
+    outline: none;
+}
+.search-btn{
+    margin-left: 4em;
+}
 
 /* sider-styling */
 
@@ -16,6 +56,7 @@
         position: fixed !important;
         top: 4rem !important;
         overflow: auto !important;
+        height: 100% !important;
         z-index: 1 !important;
     }
 }
@@ -44,7 +85,7 @@
     }
 }
 /* timeline edit */
-.time-body::before{
+/* .time-body::before{
     content: '';
     position: absolute;
     top: 0;
@@ -54,7 +95,7 @@
 
 }
 .timeline{
-    margin: 1em auto;
+    margin: 0.5em auto;
     max-width: 9.15em;
 }
 .checkpoint{
@@ -75,7 +116,7 @@
     border-left: 3px solid #888;
     padding-left: .03em;
     transform: translateX(7em);
-}
+} */
 .table-responsive{
     overflow-x: scroll;
 }

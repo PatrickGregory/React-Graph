@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { AiOutlineMenu } from "react-icons/ai";
 import { Button, Layout, theme } from 'antd';
 import CustomizedBadges from '../components/dropdowns/badged-bell';
@@ -6,7 +6,7 @@ import ChatBadges from '../components/dropdowns/badged-chat';
 import Profile from '../components/dropdowns/profile';
 import SiderMenu from './sider-menu';
 import { GridBreadcrumbs, MainBreadcrumbProp } from '../components/props';
-import { BsCart, BsCode, BsCurrencyDollar, BsPeople } from 'react-icons/bs';
+import { BsCart, BsCode, BsCurrencyDollar, BsPeople, BsSearch } from 'react-icons/bs';
 import { FaDollarSign } from 'react-icons/fa6';
 import Dashboard from '../components/dropdowns/Dashboard';
 import { HomeTable, NoBorder } from './homeTable';
@@ -15,6 +15,7 @@ import News from './news';
 import { HomeGradient } from '../pages/apex/charts';
 import HomeTimeline from './timeline';
 import Timeline from './timeline';
+import { Search, SmallSearch } from './search';
 const siderStyle = {
     overflow: 'auto',
     position: 'sticky',
@@ -31,6 +32,19 @@ const siderStyle = {
 const { Header, Content, Sider } = Layout;
 
 const App = () => {
+    // responsive search bar click
+    const [toggle, setToggle] = useState(false);
+    let buttonRef = useRef();
+    useEffect(() => {
+        let handleClose = (e) => {
+            if (!buttonRef.current.contains(e.target)) {
+                setToggle(false);
+            }
+        };
+        document.addEventListener('mousedown', handleClose);
+    });
+
+    // responsive sidebar click
     const [collapsed, setCollapsed] = useState(false);
     const {
         token: { colorBgContainer, borderRadiusLG },
@@ -50,14 +64,19 @@ const App = () => {
                     boxShadow: '0 2px 4px #312f2f53'
                 }}
             >
-                <div className='d-flex header-logo text-primary-emphasis'><h6 className='mt-1 fw-bold'>KD</h6><BsCode className='fs-4 fw-bold'/></div>
+                <div className='d-flex header-logo text-primary-emphasis'><h6 className='mt-1 fw-bold'>KD</h6><BsCode className='fs-4 fw-bold' /></div>
                 <Button
                     className='ms-5'
                     type="text"
                     icon={collapsed ? <AiOutlineMenu className='fs-4' /> : <AiOutlineMenu className='fs-6' />}
                     onClick={() => setCollapsed(!collapsed)}
                 />
-                <div></div>
+                <div className='d-flex align-items-center'>
+                    <Search />
+                </div>
+                <div className='search-responsive mx-auto'>
+                    <button className='btn' ref={buttonRef} onClick={() => setToggle(!toggle)} type='submit'><BsSearch className='text-primary-emphasis mb-2' /></button>
+                </div>
                 <div className='ms-auto d-flex gap-3'>
                     <div><CustomizedBadges /></div>
                     <div><ChatBadges /></div>
@@ -89,6 +108,15 @@ const App = () => {
                         borderRadius: borderRadiusLG,
                     }}
                 >
+                    {/* <div className={`${toggle ? '' : 'd-none'}`}>
+                        <SmallSearch />
+                    </div> */}
+                    <div className={`mx-auto search-bar-responsive ${toggle ? '' : 'd-none'} shadow`}>
+                        <form action="#" className='search-form'>
+                            <input type="text" placeholder='Search' className='h-100' />
+                            <button className='btn' type='submit'><BsSearch className='text-primary-emphasis mb-2 search-btn' /></button>
+                        </form>
+                    </div>
                     <h4 className='text-primary-emphasis'>dashboard</h4>
                     <MainBreadcrumbProp
                         page='Home'
